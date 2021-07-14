@@ -1,0 +1,41 @@
+{
+	"name": "sveltekit-graphql-github",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "env-cmd svelte-kit dev -p 3030",
+		"build": "env-cmd svelte-kit build",
+		"preview": "svelte-kit preview -p 3030",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@apollo/client": "^3.3.21",
+		"@fontsource/fira-sans": "^4.5.0",
+		"@fontsource/martel": "^4.5.0",
+		"@fontsource/merriweather": "^4.5.0",
+		"@fontsource/nunito": "^4.5.0",
+		"@fontsource/source-sans-pro": "^4.5.0",
+		"@fontsource/taviraj": "^4.5.0",
+		"@sveltejs/kit": "next",
+		"dayjs": "^1.10.6",
+		"env-cmd": "^10.1.0",
+		"eslint": "^7.30.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^3.2.0",
+		"graphql": "^15.5.1",
+		"husky": "^7.0.1",
+		"node-fetch": "^2.6.1",
+		"prettier": "~2.2.1",
+		"prettier-plugin-svelte": "^2.3.1",
+		"sass": "^1.35.2",
+		"svelte": "^3.38.3",
+		"svelte-preprocess": "^4.7.4"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "npm run prettier:check"
+		}
+	},
+	"type": "module"
+}
