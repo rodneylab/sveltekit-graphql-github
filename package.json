@@ -12,7 +12,7 @@
 		"@apollo/client": "^3.3.21",
 		"@fontsource/fira-sans": "^4.5.0",
 		"@fontsource/merriweather": "^4.5.0",
-		"@sveltejs/adapter-node": "^1.0.0-next.33",
+		"@sveltejs/adapter-static": "^1.0.0-next.13",
 		"@sveltejs/kit": "next",
 		"dayjs": "^1.10.6",
 		"env-cmd": "^10.1.0",
@@ -34,8 +34,5 @@
 			"pre-commit": "npm run prettier:check"
 		}
 	},
-	"type": "module",
-	"dependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.13"
-	}
+	"type": "module"
 }
