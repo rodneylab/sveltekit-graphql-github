@@ -8,7 +8,7 @@ specifiers:
   '@fontsource/nunito': ^4.5.0
   '@fontsource/source-sans-pro': ^4.5.0
   '@fontsource/taviraj': ^4.5.0
-  '@sveltejs/adapter-static': ^1.0.0-next.13
+  '@sveltejs/adapter-node': ^1.0.0-next.33
   '@sveltejs/kit': next
   dayjs: ^1.10.6
   env-cmd: ^10.1.0
@@ -32,7 +32,7 @@ devDependencies:
   '@fontsource/nunito': 4.5.0
   '@fontsource/source-sans-pro': 4.5.0
   '@fontsource/taviraj': 4.5.0
-  '@sveltejs/adapter-static': 1.0.0-next.13
+  '@sveltejs/adapter-node': 1.0.0-next.33
   '@sveltejs/kit': 1.0.0-next.129_svelte@3.38.3
   dayjs: 1.10.6
   env-cmd: 10.1.0
@@ -172,8 +172,11 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/adapter-static/1.0.0-next.13:
-    resolution: {integrity: sha512-zaXJlWK9JfrjrE6nG5etB8kf4DSkbE3H8Ql6gmCk3WjdvpY85a60TMYBU9OK2iunkqpHnPYiMUGEnOGYmWlLYA==}
+  /@sveltejs/adapter-node/1.0.0-next.33:
+    resolution: {integrity: sha512-0mABbAWQ5Dg7eSptvpX+fmZ0tgifscgNwgtg4iX6GRhWGizTYYBgp4yAHl4IXPqlAQkW7Lh0gw3+G2tQcs2qcQ==}
+    dependencies:
+      esbuild: 0.12.15
+      tiny-glob: 0.2.9
     dev: true
 
   /@sveltejs/kit/1.0.0-next.129_svelte@3.38.3:
@@ -725,6 +728,14 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
+    dev: true
+
+  /globalyzer/0.1.0:
+    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
+    dev: true
+
+  /globrex/0.1.2:
+    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
 
   /graphql-tag/2.12.5_graphql@15.5.1:
@@ -1284,6 +1295,13 @@ packages:
 
   /text-table/0.2.0:
     resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=}
+    dev: true
+
+  /tiny-glob/0.2.9:
+    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
+    dependencies:
+      globalyzer: 0.1.0
+      globrex: 0.1.2
     dev: true
 
   /to-regex-range/5.0.1:
