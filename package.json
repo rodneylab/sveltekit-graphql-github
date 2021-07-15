@@ -3,19 +3,15 @@
 	"version": "0.0.2",
 	"scripts": {
 		"dev": "env-cmd svelte-kit dev -p 3000",
-		"build": "svelte-kit build",
-		"preview": "svelte-kit preview -p 3000",
+		"build": "env-cmd svelte-kit build",
+		"preview": "env-cmd svelte-kit preview -p 3000",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"@apollo/client": "^3.3.21",
 		"@fontsource/fira-sans": "^4.5.0",
-		"@fontsource/martel": "^4.5.0",
 		"@fontsource/merriweather": "^4.5.0",
-		"@fontsource/nunito": "^4.5.0",
-		"@fontsource/source-sans-pro": "^4.5.0",
-		"@fontsource/taviraj": "^4.5.0",
 		"@sveltejs/adapter-node": "^1.0.0-next.33",
 		"@sveltejs/kit": "next",
 		"dayjs": "^1.10.6",
@@ -38,5 +34,8 @@
 			"pre-commit": "npm run prettier:check"
 		}
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.13"
+	}
 }

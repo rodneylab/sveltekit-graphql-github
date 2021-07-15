@@ -3,12 +3,9 @@ lockfileVersion: 5.3
 specifiers:
   '@apollo/client': ^3.3.21
   '@fontsource/fira-sans': ^4.5.0
-  '@fontsource/martel': ^4.5.0
   '@fontsource/merriweather': ^4.5.0
-  '@fontsource/nunito': ^4.5.0
-  '@fontsource/source-sans-pro': ^4.5.0
-  '@fontsource/taviraj': ^4.5.0
   '@sveltejs/adapter-node': ^1.0.0-next.33
+  '@sveltejs/adapter-static': ^1.0.0-next.13
   '@sveltejs/kit': next
   dayjs: ^1.10.6
   env-cmd: ^10.1.0
@@ -24,14 +21,13 @@ specifiers:
   svelte: ^3.38.3
   svelte-preprocess: ^4.7.4
 
+dependencies:
+  '@sveltejs/adapter-static': 1.0.0-next.13
+
 devDependencies:
   '@apollo/client': 3.3.21_graphql@15.5.1
   '@fontsource/fira-sans': 4.5.0
-  '@fontsource/martel': 4.5.0
   '@fontsource/merriweather': 4.5.0
-  '@fontsource/nunito': 4.5.0
-  '@fontsource/source-sans-pro': 4.5.0
-  '@fontsource/taviraj': 4.5.0
   '@sveltejs/adapter-node': 1.0.0-next.33
   '@sveltejs/kit': 1.0.0-next.129_svelte@3.38.3
   dayjs: 1.10.6
@@ -119,24 +115,8 @@ packages:
     resolution: {integrity: sha512-qFYIYZgerQ0iC+j6HjhUuKDOYOG3UFV8QIARdkhvZsNDpA6PTHiY8zGr5e3BjwzFFJBJOrnisxSvtbrUb82KXw==}
     dev: true
 
-  /@fontsource/martel/4.5.0:
-    resolution: {integrity: sha512-6rUxeR1HGZQDCIiQLvNK2ILzUo1DPJSEM/x3HeZXt0TZ4y3I2nQ7M8KGOgduqDwGtGAFSQW/xktjGPX/D7huaw==}
-    dev: true
-
   /@fontsource/merriweather/4.5.0:
     resolution: {integrity: sha512-muOft4m2th5/o8h6ROlzlkmYiZHk0G8Vi+3RS7E5qG9bKRr4Z15NNxf3ja2PI88X2zfPnLk+BPYRlQycIIAIFA==}
-    dev: true
-
-  /@fontsource/nunito/4.5.0:
-    resolution: {integrity: sha512-bjj6j4zmnDhQ7kfga5E8W98GzUOn478Es2bipSs2xc1lB8pJKrQh9V9CgxcvSeLfGL2Ic+0tvUfhiOsOHLtkUQ==}
-    dev: true
-
-  /@fontsource/source-sans-pro/4.5.0:
-    resolution: {integrity: sha512-+ze+nO9dVN5pAVg9CdQmVgR6f8kDpq/elHMGcyx3qsW4+TN4mI7EuMdNzKP3E1xeZwTHSmHY5bezpfFHX7bQsg==}
-    dev: true
-
-  /@fontsource/taviraj/4.5.0:
-    resolution: {integrity: sha512-5lGeKrVc8dqw7C24KqM0Mv+0DxGBXm63Wis9ZqafhAG0fI/TQWsqWG/KUlu3YPaOHfrnmihqlqqUbzB2gHywZQ==}
     dev: true
 
   /@graphql-typed-document-node/core/3.1.0_graphql@15.5.1:
@@ -178,6 +158,10 @@ packages:
       esbuild: 0.12.15
       tiny-glob: 0.2.9
     dev: true
+
+  /@sveltejs/adapter-static/1.0.0-next.13:
+    resolution: {integrity: sha512-zaXJlWK9JfrjrE6nG5etB8kf4DSkbE3H8Ql6gmCk3WjdvpY85a60TMYBU9OK2iunkqpHnPYiMUGEnOGYmWlLYA==}
+    dev: false
 
   /@sveltejs/kit/1.0.0-next.129_svelte@3.38.3:
     resolution: {integrity: sha512-Hkjv4QMlU9EIDe3M320RYu56a/TW6j9XTHf6I9oxxjvOQGKxBz9uTNuMc7ka68VceiiYnXijpAf6tSzapJEuEg==}
