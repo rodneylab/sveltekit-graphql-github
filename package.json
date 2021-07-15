@@ -1,10 +1,10 @@
 {
 	"name": "sveltekit-graphql-github",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"scripts": {
-		"dev": "env-cmd svelte-kit dev -p 3030",
+		"dev": "env-cmd svelte-kit dev -p 3000",
 		"build": "env-cmd svelte-kit build",
-		"preview": "svelte-kit preview -p 3030",
+		"preview": "svelte-kit preview -p 3000",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
