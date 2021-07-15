@@ -16,6 +16,7 @@
 		"@fontsource/nunito": "^4.5.0",
 		"@fontsource/source-sans-pro": "^4.5.0",
 		"@fontsource/taviraj": "^4.5.0",
+		"@sveltejs/adapter-static": "^1.0.0-next.13",
 		"@sveltejs/kit": "next",
 		"dayjs": "^1.10.6",
 		"env-cmd": "^10.1.0",
