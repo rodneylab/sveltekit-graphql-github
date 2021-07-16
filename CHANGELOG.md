@@ -1,4 +1,15 @@
-## Unreleased
+## 0.1.0 (2021-07-16)
+
+### Feat
+
+- ✨ added PWA capability
+
+### Fix
+
+- **static/robots**: 🤖 added robots file
+- 💄 improved styling and responsiveness
+- 🤗 improved accessibility
+- **dependencies**: 💫 update package
 
 ## 0.0.3 (2021-07-16)
 
