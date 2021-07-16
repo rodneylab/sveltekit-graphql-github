@@ -55,7 +55,8 @@
 					</h2>
 					<span>
 						<span class="meta">Updated {fromNow(repo.pushedAt)}</span>
-						{#if repo.stargazerCount > 0}<span class="meta">🌟 {repo.stargazerCount}</span>{/if}
+						{#if repo.stargazerCount > 0}<span class="meta stars">🌟 {repo.stargazerCount}</span
+							>{/if}
 					</span>
 					{#if repo.description != null}
 						<p><a href={`https://github.com/${repo.resourcePath}`}>{repo.description}</a></p>
@@ -106,6 +107,10 @@
 			color: $color-theme-3;
 			font-size: $font-size-4;
 		}
+
+		.stars {
+			font-weight: $font-weight-bold;
+		}
 	}
 
 	.repo:hover {
@@ -132,5 +137,17 @@
 		color: $color-theme-4;
 		padding: $spacing-1 $spacing-2;
 		border-radius: $spacing-1;
+	}
+
+	@media screen and (max-width: $desktop-breakpoint) {
+		.container {
+			width: 95%;
+		}
+		.content {
+			margin: $spacing-12 $spacing-2;
+		}
+		.repo {
+			margin: $spacing-10 $spacing-0;
+		}
 	}
 </style>
