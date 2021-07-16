@@ -1,6 +1,6 @@
 {
 	"name": "sveltekit-graphql-github",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"scripts": {
 		"dev": "env-cmd svelte-kit dev -p 3000",
 		"build": "svelte-kit build",
