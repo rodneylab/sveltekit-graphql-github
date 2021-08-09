@@ -10,14 +10,14 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@apollo/client": "^3.3.21",
+		"@apollo/client": "^3.4.5",
 		"@fontsource/fira-sans": "^4.5.0",
 		"@fontsource/merriweather": "^4.5.0",
-		"@sveltejs/adapter-static": "^1.0.0-next.13",
+		"@sveltejs/adapter-static": "^1.0.0-next.16",
 		"@sveltejs/kit": "next",
 		"dayjs": "^1.10.6",
 		"env-cmd": "^10.1.0",
-		"eslint": "^7.31.0",
+		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.0",
 		"graphql": "^15.5.1",
@@ -25,8 +25,8 @@
 		"node-fetch": "^2.6.1",
 		"prettier": "~2.2.1",
 		"prettier-plugin-svelte": "^2.3.1",
-		"sass": "^1.36.0",
-		"svelte": "^3.40.3",
+		"sass": "^1.37.5",
+		"svelte": "^3.42.1",
 		"svelte-preprocess": "^4.7.4"
 	},
 	"husky": {
