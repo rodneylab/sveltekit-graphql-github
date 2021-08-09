@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@apollo/client': ^3.4.5
   '@fontsource/fira-sans': ^4.5.0
+  '@fontsource/lato': ^4.5.0
   '@fontsource/merriweather': ^4.5.0
   '@sveltejs/adapter-static': ^1.0.0-next.16
   '@sveltejs/kit': next
@@ -18,11 +19,13 @@ specifiers:
   prettier-plugin-svelte: ^2.3.1
   sass: ^1.37.5
   svelte: ^3.42.1
+  svelte-feather-icons: ^3.5.0
   svelte-preprocess: ^4.7.4
 
 devDependencies:
   '@apollo/client': 3.4.5_graphql@15.5.1
   '@fontsource/fira-sans': 4.5.0
+  '@fontsource/lato': 4.5.0
   '@fontsource/merriweather': 4.5.0
   '@sveltejs/adapter-static': 1.0.0-next.16
   '@sveltejs/kit': 1.0.0-next.144_svelte@3.42.1
@@ -38,6 +41,7 @@ devDependencies:
   prettier-plugin-svelte: 2.3.1_prettier@2.2.1+svelte@3.42.1
   sass: 1.37.5
   svelte: 3.42.1
+  svelte-feather-icons: 3.5.0
   svelte-preprocess: 4.7.4_sass@1.37.5+svelte@3.42.1
 
 packages:
@@ -108,6 +112,10 @@ packages:
 
   /@fontsource/fira-sans/4.5.0:
     resolution: {integrity: sha512-qFYIYZgerQ0iC+j6HjhUuKDOYOG3UFV8QIARdkhvZsNDpA6PTHiY8zGr5e3BjwzFFJBJOrnisxSvtbrUb82KXw==}
+    dev: true
+
+  /@fontsource/lato/4.5.0:
+    resolution: {integrity: sha512-Y1qluoF+5b2U6MWcEz70+euZwl4TEV+9v7nZCmuRgNHb5McYc3VmbNmYNEiLsnb1HHwlAHA70P/LktP9EJ61ag==}
     dev: true
 
   /@fontsource/merriweather/4.5.0:
@@ -1177,6 +1185,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       has-flag: 4.0.0
+    dev: true
+
+  /svelte-feather-icons/3.5.0:
+    resolution: {integrity: sha512-AO6vwbI+WH8xouZRIxyenUV2olSAjp0QFgBa4esyS9ZxvBmKkRu9VTfgbMW0F1N7QTOWbMpgaForsnOcFGfXeg==}
+    dependencies:
+      svelte: 3.42.1
     dev: true
 
   /svelte-hmr/0.14.7_svelte@3.42.1:
