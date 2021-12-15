@@ -2,40 +2,34 @@
 	"name": "sveltekit-graphql-github",
 	"version": "0.1.0",
 	"scripts": {
-		"dev": "env-cmd svelte-kit dev -p 3000",
-		"build": "svelte-kit build",
-		"build:local": "env-cmd svelte-kit build",
-		"preview": "env-cmd svelte-kit preview -p 3000",
+		"dev": "svelte-kit dev -p 3000",
+		"build": "sh ./patch-apollo-client.sh && svelte-kit build",
+		"preview": "svelte-kit preview -p 3000",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@apollo/client": "^3.4.16",
+		"@apollo/client": "3.5.6",
 		"@fontsource/fira-sans": "^4.5.0",
 		"@fontsource/lato": "^4.5.0",
-		"@fontsource/merriweather": "^4.5.1",
-		"@sveltejs/adapter-static": "^1.0.0-next.21",
+		"@fontsource/merriweather": "^4.5.2",
+		"@sveltejs/adapter-static": "^1.0.0-next.22",
 		"@sveltejs/kit": "next",
 		"dayjs": "^1.10.7",
-		"env-cmd": "^10.1.0",
-		"eslint": "^8.1.0",
+		"dotenv": "^10.0.0",
+		"eslint": "^8.4.1",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
-		"graphql": "^15.7.2",
+		"graphql": "^15.8.0",
+		"graphql-tag": "^2.12.6",
 		"husky": "^7.0.4",
-		"node-fetch": "^2.6.6",
+		"node-fetch": "2",
 		"prettier": "~2.4.1",
-		"prettier-plugin-svelte": "^2.4.0",
-		"sass": "^1.43.4",
-		"svelte": "^3.44.0",
+		"prettier-plugin-svelte": "^2.5.1",
+		"sass": "^1.45.0",
+		"svelte": "^3.44.3",
 		"svelte-feather-icons": "^3.5.0",
-		"svelte-preprocess": "^4.9.8"
-	},
-	"husky": {
-		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "npm run prettier:check"
-		}
+		"svelte-preprocess": "^4.10.0"
 	},
 	"type": "module"
 }

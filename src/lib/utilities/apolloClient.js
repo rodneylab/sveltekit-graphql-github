@@ -1,8 +1,8 @@
 import fetch from 'node-fetch';
-import { ApolloClient } from '@apollo/client/core/core.cjs.js';
-import { HttpLink } from '@apollo/client/link/http/http.cjs.js';
-import { InMemoryCache } from '@apollo/client/cache/cache.cjs.js';
-import { setContext } from '@apollo/client/link/context/context.cjs.js';
+import { ApolloClient } from '@apollo/client/core';
+import { HttpLink } from '@apollo/client/link/http';
+import { InMemoryCache } from '@apollo/client/cache';
+import { setContext } from '@apollo/client/link/context';
 
 class Client {
 	constructor() {

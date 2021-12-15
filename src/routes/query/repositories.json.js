@@ -1,5 +1,5 @@
-import { client } from '$lib/utilities/apolloClient.js';
-import { gql } from '@apollo/client/core/core.cjs.js';
+import { client } from '$lib/utilities/apolloClient';
+import  gql  from 'graphql-tag';
 
 export async function post(request) {
 	try {
