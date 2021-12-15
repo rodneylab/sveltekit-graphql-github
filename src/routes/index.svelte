@@ -74,7 +74,7 @@
     background: $color-theme-4;
     border: solid $color-theme-3 $spacing-px;
     border-radius: $spacing-1;
-    margin: 0;
+    // margin: 0;
     width: 70%;
     margin: $spacing-12 auto;
     padding: $spacing-2 $spacing-4;
@@ -113,6 +113,15 @@
     }
   }
 
+  .meta {
+    font-size: $font-size-1;
+    background-color: $color-theme-3;
+    color: $color-theme-4;
+    padding: $spacing-1 $spacing-2;
+    border-radius: $spacing-1;
+  }
+
+  .repo:focus,
   .repo:hover {
     background-color: $color-theme-3;
     color: $color-theme-5;
@@ -129,14 +138,6 @@
       border: solid $color-theme-4 $spacing-px;
       padding: #{$spacing-1 - $spacing-px} #{$spacing-2 - $spacing-px};
     }
-  }
-
-  .meta {
-    font-size: $font-size-1;
-    background-color: $color-theme-3;
-    color: $color-theme-4;
-    padding: $spacing-1 $spacing-2;
-    border-radius: $spacing-1;
   }
 
   @media screen and (max-width: $desktop-breakpoint) {

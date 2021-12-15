@@ -27,7 +27,8 @@
     font-family: Lato;
 
     a {
-      color: adjust-color($color: #032539, $blackness: 5%);
+      // color: adjust-color($color: #032539, $blackness: 5%);
+      color: #031d2c;
     }
   }
 
