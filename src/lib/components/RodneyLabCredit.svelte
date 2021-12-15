@@ -26,9 +26,9 @@
     color: #032539;
     font-family: Lato;
 
-		a {
-			color: adjust-color($color: #032539, $blackness: 5%)
-		}
+    a {
+      color: adjust-color($color: #032539, $blackness: 5%);
+    }
   }
 
   .rodneylab-text {
