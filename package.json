@@ -2,7 +2,7 @@
   "name": "sveltekit-graphql-github",
   "version": "0.1.0",
   "scripts": {
-    "dev": "svelte-kit dev -p 3030",
+    "dev": "svelte-kit dev -p 3000",
     "build": "sh ./patch-apollo-client.sh && svelte-kit build",
     "preview": "svelte-kit preview -p 3000",
     "check": "svelte-check --fail-on-warnings",
