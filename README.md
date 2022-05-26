@@ -6,15 +6,13 @@
   </a>
 </p>
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-
 <h1 align="center">
   SvelteKit GraphQL Github
 </h1>
 
 # sveltekit-graphql-github
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-graphql-github)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-graphql-github)
 
 SvelteKit demo code for using Apollo Client to query a GraphQL API. The demo queries the GitHub GraphQL API to pull metadata on your public repos.
 
