@@ -20,4 +20,25 @@ SvelteKit demo code for using Apollo Client to query a GraphQL API. The demo que
 
 See the [Use Apollo Client with SvelteKit](https://rodneylab.com/use-apollo-client-sveltekit/) for more on how to set this site up. The demo site is live on Render at [sveltekit-graphql-github.rodneylab.com](https://sveltekit-graphql-github.rodneylab.com/)
 
-Please drop questions into a comment at the bottom of the post page. Here's the quick start:
+Please drop questions into a comment at the bottom of the post page.
+
+## Building and previewing the site
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+git clone https://github.com/rodneylab/sveltekit-graphql-github.git
+cd sveltekit-graphql-github
+pnpm install # or npm install
+pnpm run dev
+```
+
+## Building
+
+```bash
+pnpm run build
+```
+
+> You can preview the built app with `pnpm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
