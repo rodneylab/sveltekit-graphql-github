@@ -1,6 +1,8 @@
 {
   "name": "sveltekit-graphql-github",
   "version": "0.1.0",
+  "license": "BSD-3-Clause",
+  "description": "Use Apollo Client with SvelteKit to Query a GraphQL API: we use the GitHub API to query our repos and learn a bit of SvelteKit along the way.",
   "scripts": {
     "dev": "svelte-kit dev -p 3000",
     "build": "sh ./patch-apollo-client.sh && svelte-kit build",
@@ -43,5 +45,12 @@
     "svelte-check": "^2.7.1",
     "svelte-preprocess": "^4.10.6"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/sveltekit-graphql-github"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/sveltekit-graphql-github/issues"
+  }
 }
