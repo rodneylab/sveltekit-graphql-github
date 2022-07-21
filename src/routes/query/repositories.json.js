@@ -1,7 +1,7 @@
 import { client } from '$lib/utilities/apolloClient';
 import gql from 'graphql-tag';
 
-export async function post({ request }) {
+export async function POST({ request }) {
   try {
     const { limit } = await request.json();
     const query = gql`
