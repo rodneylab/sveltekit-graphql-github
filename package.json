@@ -4,9 +4,9 @@
   "license": "BSD-3-Clause",
   "description": "Use Apollo Client with SvelteKit to Query a GraphQL API: we use the GitHub API to query our repos and learn a bit of SvelteKit along the way.",
   "scripts": {
-    "dev": "svelte-kit dev -p 3000",
-    "build": "sh ./patch-apollo-client.sh && svelte-kit build",
-    "preview": "svelte-kit preview -p 3000",
+    "dev": "vite dev --port 3000",
+    "build": "sh ./patch-apollo-client.sh && vite build",
+    "preview": "vite preview --port 3000",
     "check": "svelte-check --fail-on-warnings",
     "check:watch": "svelte-check --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -35,15 +35,16 @@
     "node-fetch": "^2.6.7",
     "postcss": "^8.4.14",
     "postcss-html": "^1.4.1",
-    "prettier": "~2.4.1",
+    "prettier": "~2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
     "sass": "^1.52.1",
     "stylelint": "^14.8.5",
-    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
     "stylelint-scss": "^4.2.0",
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.1",
-    "svelte-preprocess": "^4.10.6"
+    "svelte-preprocess": "^4.10.6",
+    "vite": "^3.0.2"
   },
   "type": "module",
   "repository": {
@@ -52,5 +53,8 @@
   },
   "bugs": {
     "url": "https://github.com/rodneylab/sveltekit-graphql-github/issues"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.2"
   }
 }
