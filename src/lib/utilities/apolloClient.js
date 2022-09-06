@@ -3,6 +3,7 @@ import { ApolloClient } from '@apollo/client/core';
 import { HttpLink } from '@apollo/client/link/http';
 import { InMemoryCache } from '@apollo/client/cache';
 import { setContext } from '@apollo/client/link/context';
+import { GITHUB_PERSONAL_ACCESS_TOKEN, GRAPHQL_ENDPOINT } from '$env/static/private';
 
 class Client {
   constructor() {
@@ -16,14 +17,14 @@ class Client {
 
   setupClient() {
     const link = new HttpLink({
-      uri: process.env['GRAPHQL_ENDPOINT'],
+      uri: GRAPHQL_ENDPOINT,
       fetch,
     });
     const authLink = setContext((_, { headers }) => {
       return {
         headers: {
           ...headers,
-          authorization: `Bearer ${process.env['GITHUB_PERSONAL_ACCESS_TOKEN']}`,
+          authorization: `Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}`,
         },
       };
     });

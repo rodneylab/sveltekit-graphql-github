@@ -13,7 +13,6 @@ const config = {
   ],
   kit: {
     adapter: adapter({ precompress: true }),
-    prerender: { default: true },
   },
 };
 

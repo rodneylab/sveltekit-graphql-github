@@ -1,31 +1,3 @@
-<script context="module">
-  export const prerender = true;
-  export async function load({ fetch }) {
-    const url = '/query/repositories.json';
-    const res = await fetch(url, {
-      method: 'POST',
-      credentials: 'same-origin',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        limit: 5,
-      }),
-    });
-    const { data } = await res.json();
-    if (res.ok) {
-      return {
-        props: { data },
-      };
-    }
-
-    return {
-      status: res.status,
-      error: new Error(`Couldn't load ${url}`),
-    };
-  }
-</script>
-
 <script>
   import dayjs from 'dayjs';
   import relativeTime from 'dayjs/plugin/relativeTime.js';
@@ -33,7 +5,7 @@
 
   dayjs.extend(relativeTime);
 
-  const { login: user, repositories: repoNodes } = data.viewer;
+  const { login: user, repositories: repoNodes } = data.data.viewer;
   const { nodes: repos } = repoNodes;
   const repoCount = repos.length;
 
