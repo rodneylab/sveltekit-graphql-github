@@ -28,7 +28,7 @@
 		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"graphql": "^15.8.0",
+		"graphql": "^16.0.1",
 		"graphql-tag": "^2.12.6",
 		"husky": "^8.0.1",
 		"node-fetch": "^2.6.7",
@@ -54,6 +54,7 @@
 		"url": "https://github.com/rodneylab/sveltekit-graphql-github/issues"
 	},
 	"peerDependencies": {
+		"graphql": "^16.0.1",
 		"vite": "^3.0.2"
 	}
 }
