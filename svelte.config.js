@@ -4,16 +4,16 @@ import preprocess from 'svelte-preprocess';
 import 'dotenv/config';
 
 const config = {
-  preprocess: [
-    preprocess({
-      scss: {
-        prependData: "@import 'src/lib/styles/variables.scss';",
-      },
-    }),
-  ],
-  kit: {
-    adapter: adapter({ precompress: true }),
-  },
+	preprocess: [
+		preprocess({
+			scss: {
+				prependData: "@import 'src/lib/styles/variables.scss';",
+			},
+		}),
+	],
+	kit: {
+		adapter: adapter({ precompress: true }),
+	},
 };
 
 export default config;
