@@ -19,25 +19,22 @@
 	<div class="content">
 		<h1 class="heading">{`${user}'s GitHub`}</h1>
 
-		{#if repoCount > 0}
-			{#each repos as repo, index}
-				<article aria-posinset={index + 1} aria-setsize={repoCount} class="repo">
-					<h2>
-						{repo.name}
-					</h2>
-					<span>
-						<span class="meta">Updated {fromNow(repo.pushedAt)}</span>
-						{#if repo.stargazerCount > 0}<span class="meta stars">🌟 {repo.stargazerCount}</span
-							>{/if}
-					</span>
-					{#if repo.description != null}
-						<p><a href={`https://github.com/${repo.resourcePath}`}>{repo.description}</a></p>
-					{/if}
-				</article>
-			{/each}
+		{#each repos as repo, index}
+			<article aria-posinset={index + 1} aria-setsize={repoCount} class="repo">
+				<h2>
+					{repo.name}
+				</h2>
+				<span>
+					<span class="meta">Updated {fromNow(repo.pushedAt)}</span>
+					{#if repo.stargazerCount > 0}<span class="meta stars">🌟 {repo.stargazerCount}</span>{/if}
+				</span>
+				{#if repo.description != null}
+					<p><a href={`https://github.com/${repo.resourcePath}`}>{repo.description}</a></p>
+				{/if}
+			</article>
 		{:else}
 			<p>No repos found :/</p>
-		{/if}
+		{/each}
 	</div>
 </div>
 
