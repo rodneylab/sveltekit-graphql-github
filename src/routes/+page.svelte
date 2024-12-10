@@ -40,84 +40,87 @@
 
 <style lang="scss">
 	.container {
-		background: $color-theme-4;
-		border: solid $color-theme-3 $spacing-px;
-		border-radius: $spacing-1;
-		// margin: 0;
+		background: variables.$color-theme-4;
+		border: solid variables.$color-theme-3 variables.$spacing-px;
+		border-radius: variables.$spacing-1;
 		width: 70%;
-		margin: $spacing-12 auto;
-		padding: $spacing-2 $spacing-4;
+		margin: variables.$spacing-12 auto;
+		padding: variables.$spacing-2 variables.$spacing-4;
 
 		p {
-			font-size: $font-size-2;
-			margin-top: $spacing-8;
+			font-size: variables.$font-size-2;
+			margin-top: variables.$spacing-8;
 		}
 	}
+
 	.heading {
-		color: $color-theme-3;
+		color: variables.$color-theme-3;
 	}
 
 	.content {
-		margin: $spacing-12;
-		color: $color-theme-3;
+		margin: variables.$spacing-12;
+		color: variables.$color-theme-3;
 	}
 
 	.repo {
-		border: solid $color-theme-3 $spacing-px;
-		border-radius: $spacing-1;
-		background-color: $color-theme-5;
-		margin: $spacing-6 $spacing-0;
-		padding: $spacing-4;
-		color: $color-theme-3;
+		border: solid variables.$color-theme-3 variables.$spacing-px;
+		border-radius: variables.$spacing-1;
+		background-color: variables.$color-theme-5;
+		margin: variables.$spacing-6 variables.$spacing-0;
+		padding: variables.$spacing-4;
+		color: variables.$color-theme-3;
 
 		h2 {
-			margin-top: $spacing-0;
-			margin-bottom: $spacing-4;
-			color: $color-theme-3;
-			font-size: $font-size-4;
+			margin-top: variables.$spacing-0;
+			margin-bottom: variables.$spacing-4;
+			color: variables.$color-theme-3;
+			font-size: variables.$font-size-4;
 		}
 
 		.stars {
-			font-weight: $font-weight-bold;
+			font-weight: variables.$font-weight-bold;
 		}
 	}
 
 	.meta {
-		font-size: $font-size-1;
-		background-color: $color-theme-3;
-		color: $color-theme-4;
-		padding: $spacing-1 $spacing-2;
-		border-radius: $spacing-1;
+		font-size: variables.$font-size-1;
+		background-color: variables.$color-theme-3;
+		color: variables.$color-theme-4;
+		padding: variables.$spacing-1 variables.$spacing-2;
+		border-radius: variables.$spacing-1;
 	}
 
 	.repo:focus,
 	.repo:hover {
-		background-color: $color-theme-3;
-		color: $color-theme-5;
+		background-color: variables.$color-theme-3;
+		color: variables.$color-theme-5;
 
 		h2 {
-			color: $color-theme-5;
+			color: variables.$color-theme-5;
 		}
 
 		a {
-			color: $color-theme-4;
+			color: variables.$color-theme-4;
 		}
 
 		.meta {
-			border: solid $color-theme-4 $spacing-px;
-			padding: #{$spacing-1 - $spacing-px} #{$spacing-2 - $spacing-px};
+			border: solid variables.$color-theme-4 variables.$spacing-px;
+			padding: #{variables.$spacing-1 - variables.$spacing-px} /* prettier-ignore */
+				#{variables.$spacing-2 - variables.$spacing-px};
 		}
 	}
 
-	@media screen and (max-width: $desktop-breakpoint) {
+	@media screen and (max-width: variables.$desktop-breakpoint) {
 		.container {
 			width: 95%;
 		}
+
 		.content {
-			margin: $spacing-12 $spacing-2;
+			margin: variables.$spacing-12 variables.$spacing-2;
 		}
+
 		.repo {
-			margin: $spacing-10 $spacing-0;
+			margin: variables.$spacing-10 variables.$spacing-0;
 		}
 	}
 </style>
