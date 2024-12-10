@@ -1,7 +1,8 @@
 <script>
 	import dayjs from 'dayjs';
 	import relativeTime from 'dayjs/plugin/relativeTime.js';
-	export let data;
+
+	let { data } = $props();
 
 	dayjs.extend(relativeTime);
 

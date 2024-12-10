@@ -16,11 +16,13 @@
 	import XIcon from '$lib/components/Icons/X.svelte';
 	import website from '$lib/config/website';
 
+	let { children } = $props();
+
 	const { facebookPage, githubPage, linkedinProfile, tiktokUsername, twitterUsername } = website;
 </script>
 
 <main>
-	<slot />
+	{@render children?.()}
 </main>
 <footer class="footer-container">
 	<div>
