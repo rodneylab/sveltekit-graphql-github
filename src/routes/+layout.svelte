@@ -13,14 +13,16 @@
 	import LinkedinIcon from '$lib/components/Icons/LinkedIn.svelte';
 	import RodneyLabCredit from '$lib/components/RodneyLabCredit.svelte';
 	import TiktokIcon from '$lib/components/Icons/Tiktok.svelte';
-	import TwitterIcon from '$lib/components/Icons/Twitter.svelte';
+	import XIcon from '$lib/components/Icons/X.svelte';
 	import website from '$lib/config/website';
+
+	let { children } = $props();
 
 	const { facebookPage, githubPage, linkedinProfile, tiktokUsername, twitterUsername } = website;
 </script>
 
 <main>
-	<slot />
+	{@render children?.()}
 </main>
 <footer class="footer-container">
 	<div>
@@ -29,7 +31,7 @@
 			href="https://rodneylab.com/"
 			target="_blank"
 			rel="noopener noreferrer">Rodney Lab</a
-		>. Copyright {COPYRIGHT_ENTITY} 2021–2023.
+		>. Copyright {COPYRIGHT_ENTITY} 2021&thinsp;&ndash;&thinsp;2024.
 	</div>
 	<nav class="footer-icons">
 		<ul>
@@ -46,9 +48,8 @@
 			</li>
 			<li class="hover-jump">
 				<ExternalLink
-					ariaLabel="Go to the Rodney Lab Twitter Page"
-					href={`https://twitter.com/intent/user?screen_name=${twitterUsername}`}
-					><TwitterIcon /></ExternalLink
+					ariaLabel="Go to the Rodney Lab X Page"
+					href={`https://x.com/intent/user?screen_name=${twitterUsername}`}><XIcon /></ExternalLink
 				>
 			</li>
 			<li class="hover-jump">
@@ -73,8 +74,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-width: $max-width-wrapper;
-		margin: $spacing-12 auto $spacing-0;
+		max-width: variables.$max-width-wrapper;
+		margin: variables.$spacing-12 auto variables.$spacing-0;
 		width: 100%;
 	}
 
@@ -84,11 +85,11 @@
 
 		ul {
 			display: flex;
-			margin: $spacing-6 $spacing-0;
+			margin: variables.$spacing-6 variables.$spacing-0;
 
 			li {
 				display: flex;
-				margin: $spacing-0 $spacing-4 $spacing-0 $spacing-0;
+				margin: variables.$spacing-0 variables.$spacing-4 variables.$spacing-0 variables.$spacing-0;
 			}
 		}
 	}
@@ -101,6 +102,6 @@
 
 	.hover-jump:focus,
 	.hover-jump:hover {
-		transform: translateY(-$spacing-2);
+		transform: translateY(-1 * variables.$spacing-2);
 	}
 </style>

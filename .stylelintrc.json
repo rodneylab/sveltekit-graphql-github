@@ -1,5 +1,5 @@
 {
-	"extends": "stylelint-config-recommended-scss",
+	"extends": "stylelint-config-standard-scss",
 	"rules": {
 		"color-named": "never",
 		"font-family-name-quotes": "always-where-required",
