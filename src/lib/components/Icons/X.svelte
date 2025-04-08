@@ -10,7 +10,7 @@
 
 <div class="logo">
 	<svg
-		{ariaHidden}
+		aria-hidden={ariaHidden}
 		color={colour}
 		aria-label={label}
 		role="img"
